@@ -1,6 +1,6 @@
 FROM centos
 # argumentos usados para o build
-# docker build -t meugiut --build-arg userName=''--build-arg email='' .
+# docker build -t meugit --build-arg userName='' --build-arg email='' .
 ARG userName
 ARG email
 LABEL maintainer="Isaac Roque Sartori Junior <isaacrsjr@hotmail.com>" \
