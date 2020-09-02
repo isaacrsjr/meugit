@@ -7,7 +7,7 @@ LABEL maintainer="Isaac Roque Sartori Junior <isaacrsjr@hotmail.com>" \
       description="Container para usar git em qualquer S.O."
 VOLUME [ "/fontes" ]
 RUN yum update -y && \
-    yum install git git-svn -y && \
+    yum install git git-svn man -y && \
     yum clean all && \
     git config --global user.name "${userName}"; \
     git config --global user.email "${email}"
