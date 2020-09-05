@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker run --rm -v $(pwd):/fontes/ -v $HOME/.ssh/:/root/.ssh/ meugit $@
+docker run --rm -ti -e EDITOR=vi -v $(pwd):/fontes/ -v $HOME/.ssh/:/root/.ssh/ meugit $@
